@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ATM:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ATM_jar</output-path>
+    <root id="archive" name="ATM.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ATM" />
+      <element id="extracted-dir" path="C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../KM28/Desktop/FrameWorks/BL/FX-BorderlessScene-3.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/resources/jfoenix-9.0.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

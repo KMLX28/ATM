@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AfterTransactionController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="205.0" prefWidth="600.0" style="-fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0); -fx-background-color: radial-gradient(radius 260%,  #75CCB3, derive( #75CCB3, -20%), derive( #75CCB3, 190%));">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/success.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="196.0" fitWidth="600.0" layoutY="204.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resources/blurred-background-19.jpg" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff22" height="184.0" layoutX="5.0" layoutY="210.0" opacity="0.43" stroke="TRANSPARENT" strokeType="INSIDE" width="589.0" />
+                  <JFXButton fx:id="mainMenuButton" buttonType="RAISED" layoutX="66.0" layoutY="279.0" onAction="#mainMenuButtonPressed" prefHeight="50.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: radial-gradient(radius 260%, burlywood, derive(burlywood, -20%), derive(burlywood, 190%));" text="Main Menu" textFill="#ffffffe7">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="exitButton" buttonType="RAISED" layoutX="312.0" layoutY="280.0" onAction="#exitButtonPressed" prefHeight="50.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: radial-gradient(radius 260%,  #CC5139, derive( #CC5139, -20%), derive( #CC5139, 190%));" text="Exit" textFill="#ffffffe7">
+                     <font>
+                        <Font name="Ubuntu" size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

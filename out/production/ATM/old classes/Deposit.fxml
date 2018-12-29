@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DepositController">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="500.0" prefWidth="700.0">
+         <items>
+            <AnchorPane accessibleText="fghh">
+               <children>
+                  <Label layoutX="14.0" layoutY="115.0" prefHeight="35.0" prefWidth="200.0" text="Enter Amount -&gt;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="insufficientFundsLabel" layoutX="204.0" layoutY="195.0" text="Insufficient funds in your account" textFill="RED" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="anotherAmountLabel" layoutX="214.0" layoutY="115.0" text="*Amount*">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backButton" layoutX="510.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="76.0" prefWidth="188.0" text="Back" />
+                  <Label layoutX="8.0" layoutY="12.0" prefHeight="53.0" prefWidth="130.0" text="Deposit">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" layoutX="-34.0" layoutY="-38.0" prefHeight="310.0" prefWidth="811.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="296.0" prefWidth="413.0">
+                           <children>
+                              <Button fx:id="one" layoutX="69.0" layoutY="62.0" mnemonicParsing="false" onAction="#onePressed" prefHeight="50.0" prefWidth="70.0" text="1" />
+                              <Button fx:id="three" layoutX="208.0" layoutY="62.0" mnemonicParsing="false" onAction="#threePressed" prefHeight="50.0" prefWidth="70.0" text="3" />
+                              <Button fx:id="two" layoutX="139.0" layoutY="62.0" mnemonicParsing="false" onAction="#twoPressed" prefHeight="50.0" prefWidth="70.0" text="2" />
+                              <Button fx:id="seven" layoutX="69.0" layoutY="162.0" mnemonicParsing="false" onAction="#sevenPressed" prefHeight="50.0" prefWidth="70.0" text="7" />
+                              <Button fx:id="nine" layoutX="208.0" layoutY="162.0" mnemonicParsing="false" onAction="#ninePressed" prefHeight="50.0" prefWidth="70.0" text="9" />
+                              <Button fx:id="eight" layoutX="139.0" layoutY="162.0" mnemonicParsing="false" onAction="#eightPressed" prefHeight="50.0" prefWidth="70.0" text="8" />
+                              <Button fx:id="four" layoutX="69.0" layoutY="112.0" mnemonicParsing="false" onAction="#fourPressed" prefHeight="50.0" prefWidth="70.0" text="4" />
+                              <Button fx:id="six" layoutX="208.0" layoutY="112.0" mnemonicParsing="false" onAction="#sixPressed" prefHeight="50.0" prefWidth="70.0" text="6" />
+                              <Button fx:id="five" layoutX="138.0" layoutY="112.0" mnemonicParsing="false" onAction="#fivePressed" prefHeight="50.0" prefWidth="70.0" text="5" />
+                              <Button fx:id="zero" layoutX="68.0" layoutY="212.0" mnemonicParsing="false" onAction="#zeroPressed" prefHeight="35.0" prefWidth="211.0" text="0" />
+                              <Button fx:id="enterButton" layoutX="278.0" layoutY="162.0" mnemonicParsing="false" onAction="#enterButtonPressed" prefHeight="50.0" prefWidth="70.0" text="Enter" />
+                              <Button fx:id="deleteButton" layoutX="278.0" layoutY="112.0" mnemonicParsing="false" onAction="#deleteButtonPressed" prefHeight="50.0" prefWidth="70.0" text="Delete" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="308.0" prefWidth="408.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" layoutX="-28.0" layoutY="36.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="358.0">
+                                 <items>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <Label layoutX="137.0" layoutY="6.0" text="Take Cash Here" />
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" height="8.0" layoutX="57.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="8.0" layoutX="37.0" layoutY="-18.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#868686" height="4.0" layoutX="62.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="265.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="33.0" prefWidth="356.0">
+                                       <children>
+                                          <Label layoutX="101.0" layoutY="6.0" text="Insert Deposit Envelope Here" />
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" height="8.0" layoutX="55.0" layoutY="41.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#868686" height="4.0" layoutX="59.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" width="265.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</FlowPane>

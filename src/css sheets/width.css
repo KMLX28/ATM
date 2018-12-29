@@ -1,0 +1,16 @@
+.tab {
+	 -fx-pref-width : 250;
+	 -fx-max-height : 5;
+}
+
+.tab-header-background {
+   -fx-background-color:transparent
+}
+
+.tab-selected-line {
+    -fx-background-color: #a8863f;
+}
+
+.tab-pane .headers-region {
+    -fx-effect: null;
+}

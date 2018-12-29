@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/blurred-background-1.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="666.0" prefWidth="886.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" layoutX="-1.0" prefHeight="25.0" prefWidth="1001.0">
+               <children>
+                  <Label fx:id="controlBar" onMouseClicked="#controlBarClicked" onMouseEntered="#controlBarEntered" onMouseExited="#controlBarExited" opacity="0.85" prefHeight="37.0" prefWidth="1000.0" style="-fx-background-color: black;" />
+                  <HBox opacity="0.85" prefHeight="37.0" prefWidth="89.0" style="-fx-background-color: black;">
+                     <children>
+                        <ImageView fx:id="backIcon" fitHeight="37.0" fitWidth="65.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/originalback.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="exitIcon" fitHeight="37.0" fitWidth="65.0" onMouseClicked="#exitClicked" onMouseEntered="#exitEntered" onMouseExited="#exitExited" opacity="0.75" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../resources/exit.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutX="1.0" layoutY="718.0" prefHeight="6.0" prefWidth="1000.0">
+               <children>
+                  <ImageView fx:id="logoutIcon" fitHeight="37.0" fitWidth="65.0" onMouseClicked="#logoutClicked" onMouseEntered="#logoutEntered" onMouseExited="#logoutExited" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane layoutX="183.0" layoutY="142.0" prefHeight="532.0" prefWidth="616.0">
+               <children>
+                  <ImageView fitHeight="517.0" fitWidth="610.0" layoutX="3.0" layoutY="8.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resources/blurred-background-8.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#0000005f" />
+                     </effect>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="48.0" layoutY="29.0" prefHeight="475.0" prefWidth="520.0" spacing="5.0">
+                     <children>
+                        <JFXButton fx:id="informationButton" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#informationButtonPressed" prefHeight="100.0" prefWidth="500.0" ripplerFill="WHITE" style="-fx-background-color: radial-gradient(radius 260%, #1EA5AE, derive(#1EA5AE, -20%), derive(#1EA5AE, 190%));" text="  Information" textAlignment="JUSTIFY" textFill="#ffffffbb">
+                           <font>
+                              <Font name="Ubuntu Bold" size="36.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/preview.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="withdrawCashButton" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#withdrawCashButtonPressed" prefHeight="100.0" prefWidth="500.0" ripplerFill="WHITE" style="-fx-background-color: radial-gradient(radius 260%, #58835F, derive(#58835F, -20%), derive(#58835F, 190%));" text="  Withdraw Cash" textAlignment="JUSTIFY" textFill="#ffffffbb">
+                           <font>
+                              <Font name="Ubuntu Bold" size="36.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/atm.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="depositFundsButton" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#depositFundsButtonPressed" prefHeight="100.0" prefWidth="500.0" ripplerFill="WHITE" style="-fx-background-color: radial-gradient(radius 260%, #956715, derive(#956715, -20%), derive(#956715, 190%));" text="  Deposit Funds" textAlignment="JUSTIFY" textFill="#ffffffbb">
+                           <font>
+                              <Font name="Ubuntu Bold" size="36.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/wallet.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="transferButton" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#transferButtonPressed" prefHeight="100.0" prefWidth="500.0" ripplerFill="WHITE" style="-fx-background-color: radial-gradient(radius 260%, #A49423, derive(#A49423, -20%), derive(#A49423, 190%));" text="  Transfer" textAlignment="JUSTIFY" textFill="#ffffffbb">
+                           <font>
+                              <Font name="Ubuntu Bold" size="36.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/money-transfer.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Label fx:id="welcomeLabel" layoutX="245.0" layoutY="67.0" text="Welcome Back, *FirstName*">
+               <font>
+                  <Font name="Ubuntu" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
