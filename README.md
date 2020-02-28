@@ -1,2 +1,2 @@
 # ATM
- ATM Simulator that do the main services in every ATM, (e.g. withdraw, deposit,...). 
+ ATM Simulator that do the main services in every ATM, (e.g. withdraw, deposit,...). This is my very first project...
